@@ -66,7 +66,7 @@ function PageStackManager({ Component, pageProps, pageKey }) {
 
   return (
     <>
-      {bottomEntry && bottomEntry.page}
+      {bottomEntry && <div aria-hidden={isModal}>{bottomEntry.page}</div>}
       {parentModalEntries.map(({ page, pageKey }, i) => (
         <PageModal key={pageKey} page={page} level={i + 1} isTop={false} />
       ))}
