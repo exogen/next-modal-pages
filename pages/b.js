@@ -1,26 +1,10 @@
-import Link from "next/link";
+import SiteNav from "../components/SiteNav";
 
-export default function PageB() {
+export default function HomePage() {
   return (
     <div>
-      <h1>B</h1>
-      <ul>
-        <li>
-          <Link href="/a">
-            <a>to A</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/b">
-            <a>to B</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/c">
-            <a>to C</a>
-          </Link>
-        </li>
-      </ul>
+      <h1>Page B</h1>
+      <SiteNav />
     </div>
   );
 }
