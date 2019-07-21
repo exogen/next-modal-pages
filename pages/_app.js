@@ -1,7 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
 import App, { Container } from "next/app";
 import PageManager from "../components/PageManager";
-import PageModal from "../components/PageModal";
 
 export default class ModalApp extends App {
   static async getInitialProps({ Component, ctx }) {
