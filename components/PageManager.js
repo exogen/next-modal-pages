@@ -2,8 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import StackInfoProvider from "./StackInfoProvider";
 import PageModal from "./PageModal";
 
-const StackContext = React.createContext({ thisLevel: 0, topLevel: 0 });
-
 export default function PageManager({ page, level, url }) {
   const [stack, setStack] = useState(() => {
     // Must start at 0 at the beginning regardless of input, otherwise parents
